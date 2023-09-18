@@ -28,8 +28,8 @@ int main(){
     for(int i = 0; i < 5; i++){
         numAleatorio[i] = rand () % 10;
     }
-    //Otras variables        
-    
+    //Sintaxis del juego principal        
+    //falta hacer que se repita 10 veces, si no adivina las 10 veces tiene que mostrar un fin del juego
 
 
 
@@ -43,9 +43,9 @@ int main(){
             if(numIngresado[i] == numAleatorio[j]){
                 
                 if(numIngresado[i] == numAleatorio[i]){
-                    printf("El numero %d la posicion esta correcta\n", numIngresado[i]);
+                    printf("El numero %d es correcto y la posicion es correcta\n", numIngresado[i]);
                 } else {
-                    printf("El numero %d se repit pero la posicion esta incorrecta\n", numIngresado[i]);
+                    printf("El numero %d se repite pero la posicion esta incorrecta\n", numIngresado[i]);
                 }
                 break;
             }
